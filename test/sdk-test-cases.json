@@ -1,0 +1,1987 @@
+[
+  {
+    "id": "behavior-1",
+    "operationId": "getHealthCheck",
+    "method": "GET",
+    "path": "/health",
+    "signature": "{\"errors\":[],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response"],
+    "parameters": [],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": false
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-2",
+    "operationId": "getI18nLang",
+    "method": "GET",
+    "path": "/lang/{lang}",
+    "signature": "{\"errors\":[],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response", "path-serialization"],
+    "parameters": [
+      {
+        "name": "lang",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": "lang"
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": {
+          "data": {
+            "_.code": "_.code",
+            "_.name": "Example Name",
+            "admin.errorMarshallingConfig": "admin.errorMarshallingConfig",
+            "analytics.count": "analytics.count",
+            "analytics.fromDate": "2024-01-01T00:00:00Z",
+            "analytics.invalidDates": "2024-01-01T00:00:00Z",
+            "analytics.isUnique": "analytics.isUnique",
+            "analytics.links": "https://example.com",
+            "analytics.nonUnique": "analytics.nonUnique",
+            "analytics.title": "analytics.title",
+            "analytics.toDate": "2024-01-01T00:00:00Z",
+            "bounces.numSelected": "bounces.numSelected",
+            "bounces.selectAll": "bounces.selectAll",
+            "bounces.source": "bounces.source",
+            "bounces.unknownService": "bounces.unknownService",
+            "bounces.view": "bounces.view",
+            "campaigns.addAltText": "campaigns.addAltText",
+            "campaigns.archive": "campaigns.archive",
+            "campaigns.archiveEnable": "campaigns.archiveEnable",
+            "campaigns.archiveHelp": "campaigns.archiveHelp",
+            "campaigns.archiveMeta": "campaigns.archiveMeta",
+            "campaigns.archiveMetaHelp": "campaigns.archiveMetaHelp",
+            "campaigns.cantUpdate": "2024-01-01T00:00:00Z",
+            "campaigns.clicks": "campaigns.clicks",
+            "campaigns.confirmDelete": "campaigns.confirmDelete",
+            "campaigns.confirmSchedule": "campaigns.confirmSchedule",
+            "campaigns.confirmSwitchFormat": "2024-01-01T00:00:00Z",
+            "campaigns.content": "campaigns.content",
+            "campaigns.contentHelp": "campaigns.contentHelp",
+            "campaigns.continue": "campaigns.continue",
+            "campaigns.copyOf": "campaigns.copyOf",
+            "campaigns.customHeadersHelp": "campaigns.customHeadersHelp",
+            "campaigns.dateAndTime": "2024-01-01T00:00:00Z",
+            "campaigns.ended": "campaigns.ended",
+            "campaigns.errorSendTest": "campaigns.errorSendTest",
+            "campaigns.fieldInvalidBody": "campaigns.fieldInvalidBody",
+            "campaigns.fieldInvalidFromEmail": "user@example.com",
+            "campaigns.fieldInvalidListIDs": "campaigns.fieldInvalidListIDs",
+            "campaigns.fieldInvalidMessenger": "campaigns.fieldInvalidMessenger",
+            "campaigns.fieldInvalidName": "Example Name",
+            "campaigns.fieldInvalidSendAt": "2024-01-01T00:00:00Z",
+            "campaigns.fieldInvalidSubject": "campaigns.fieldInvalidSubject",
+            "campaigns.formatHTML": "campaigns.formatHTML",
+            "campaigns.fromAddress": "campaigns.fromAddress",
+            "campaigns.fromAddressPlaceholder": "campaigns.fromAddressPlaceholder",
+            "campaigns.invalid": "campaigns.inval-1",
+            "campaigns.invalidCustomHeaders": "campaigns.invalidCustomHeaders",
+            "campaigns.markdown": "campaigns.markdown",
+            "campaigns.needsSendAt": "2024-01-01T00:00:00Z",
+            "campaigns.newCampaign": "campaigns.newCampaign",
+            "campaigns.noKnownSubsToTest": "campaigns.noKnownSubsToTest",
+            "campaigns.noOptinLists": "campaigns.noOptinLists",
+            "campaigns.noSubs": "campaigns.noSubs",
+            "campaigns.noSubsToTest": "campaigns.noSubsToTest",
+            "campaigns.notFound": "campaigns.notFound",
+            "campaigns.onlyActiveCancel": "campaigns.onlyActiveCancel",
+            "campaigns.onlyActivePause": "campaigns.onlyActivePause",
+            "campaigns.onlyDraftAsScheduled": "campaigns.onlyDraftAsScheduled",
+            "campaigns.onlyPausedDraft": "campaigns.onlyPausedDraft",
+            "campaigns.onlyScheduledAsDraft": "campaigns.onlyScheduledAsDraft",
+            "campaigns.pause": "campaigns.pause",
+            "campaigns.plainText": "campaigns.plainText",
+            "campaigns.preview": "campaigns.preview",
+            "campaigns.progress": "campaigns.progress",
+            "campaigns.queryPlaceholder": "campaigns.queryPlaceholder",
+            "campaigns.rateMinuteShort": "campaigns.rateMinuteShort",
+            "campaigns.rawHTML": "campaigns.rawHTML",
+            "campaigns.removeAltText": "campaigns.removeAltText",
+            "campaigns.richText": "campaigns.richText",
+            "campaigns.schedule": "campaigns.schedule",
+            "campaigns.scheduled": "campaigns.scheduled",
+            "campaigns.send": "campaigns.send",
+            "campaigns.sendLater": "campaigns.sendLater",
+            "campaigns.sendTest": "campaigns.sendTest",
+            "campaigns.sendTestHelp": "campaigns.sendTestHelp",
+            "campaigns.sendToLists": "campaigns.sendToLists",
+            "campaigns.sent": "campaigns.sent",
+            "campaigns.start": "campaigns.start",
+            "campaigns.started": "campaigns.started",
+            "campaigns.startedAt": "2024-01-01T00:00:00Z",
+            "campaigns.stats": "campaigns.stats",
+            "campaigns.status.cancelled": "active",
+            "campaigns.status.draft": "active",
+            "campaigns.status.finished": "active",
+            "campaigns.status.paused": "active",
+            "campaigns.status.running": "active",
+            "campaigns.status.scheduled": "active",
+            "campaigns.statusChanged": "active",
+            "campaigns.subject": "campaigns.subject",
+            "campaigns.testEmails": "user@example.com",
+            "campaigns.testSent": "campaigns.testSent",
+            "campaigns.timestamps": "2024-01-01T00:00:00Z",
+            "campaigns.trackLink": "https://example.com",
+            "campaigns.views": "campaigns.views",
+            "dashboard.campaignViews": "dashboard.campaignViews",
+            "dashboard.linkClicks": "https://example.com",
+            "dashboard.messagesSent": "example text",
+            "dashboard.orphanSubs": "dashboard.orphanSubs",
+            "email.data.info": "user@example.com",
+            "email.data.title": "user@example.com",
+            "email.optin.confirmSub": "user@example.com",
+            "email.optin.confirmSubHelp": "user@example.com",
+            "email.optin.confirmSubInfo": "user@example.com",
+            "email.optin.confirmSubTitle": "user@example.com",
+            "email.optin.confirmSubWelcome": "user@example.com",
+            "email.optin.privateList": "user@example.com",
+            "email.status.campaignReason": "user@example.com",
+            "email.status.campaignSent": "user@example.com",
+            "email.status.campaignUpdateTitle": "user@example.com",
+            "email.status.importFile": "user@example.com",
+            "email.status.importRecords": "user@example.com",
+            "email.status.importTitle": "user@example.com",
+            "email.status.status": "user@example.com",
+            "email.unsub": "user@example.com",
+            "email.unsubHelp": "user@example.com",
+            "email.viewInBrowser": "user@example.com",
+            "forms.formHTML": "forms.formHTML",
+            "forms.formHTMLHelp": "forms.formHTMLHelp",
+            "forms.noPublicLists": "forms.noPublicLists",
+            "forms.publicLists": "forms.publicLists",
+            "forms.publicSubPage": "forms.publicSubPage",
+            "forms.selectHelp": "forms.selectHelp",
+            "forms.title": "forms.title",
+            "globals.buttons.add": "globals.buttons.add",
+            "globals.buttons.addNew": "globals.buttons.addNew",
+            "globals.buttons.back": "globals.buttons.back",
+            "globals.buttons.cancel": "globals.buttons.cancel",
+            "globals.buttons.clone": "globals.buttons.clone",
+            "globals.buttons.close": "globals.buttons.close",
+            "globals.buttons.continue": "globals.buttons.continue",
+            "globals.buttons.delete": "globals.buttons.delete",
+            "globals.buttons.deleteAll": "globals.buttons.deleteAll",
+            "globals.buttons.edit": "globals.buttons.edit",
+            "globals.buttons.enabled": "globals.buttons.enabled",
+            "globals.buttons.insert": "globals.buttons.insert",
+            "globals.buttons.learnMore": "globals.buttons.learnMore",
+            "globals.buttons.more": "globals.buttons.more",
+            "globals.buttons.new": "globals.buttons.new",
+            "globals.buttons.ok": "globals.buttons.ok",
+            "globals.buttons.remove": "globals.buttons.remove",
+            "globals.buttons.save": "globals.buttons.save",
+            "globals.buttons.saveChanges": "globals.buttons.saveChanges",
+            "globals.days.0": "globals.days.0",
+            "globals.days.1": "globals.days.1",
+            "globals.days.2": "globals.days.2",
+            "globals.days.3": "globals.days.3",
+            "globals.days.4": "globals.days.4",
+            "globals.days.5": "globals.days.5",
+            "globals.days.6": "globals.days.6",
+            "globals.days.7": "globals.days.7",
+            "globals.fields.createdAt": "2024-01-01T00:00:00Z",
+            "globals.fields.description": "example text",
+            "globals.fields.id": "globals.fields.-1",
+            "globals.fields.name": "Example Name",
+            "globals.fields.status": "active",
+            "globals.fields.type": "globals.fields.type",
+            "globals.fields.updatedAt": "2024-01-01T00:00:00Z",
+            "globals.fields.uuid": "globals.fields.uu-1",
+            "globals.messages.confirm": "example text",
+            "globals.messages.confirmDiscard": "example text",
+            "globals.messages.created": "example text",
+            "globals.messages.deleted": "example text",
+            "globals.messages.deletedCount": "example text",
+            "globals.messages.done": "example text",
+            "globals.messages.emptyState": "example text",
+            "globals.messages.errorCreating": "example text",
+            "globals.messages.errorDeleting": "example text",
+            "globals.messages.errorFetching": "example text",
+            "globals.messages.errorInvalidIDs": "example text",
+            "globals.messages.errorUUID": "globals.messages.errorUU-1",
+            "globals.messages.errorUpdating": "example text",
+            "globals.messages.internalError": "example text",
+            "globals.messages.invalidData": "example text",
+            "globals.messages.invalidID": "globals.messages.invalid-1",
+            "globals.messages.invalidUUID": "globals.messages.invalidUU-1",
+            "globals.messages.missingFields": "example text",
+            "globals.messages.notFound": "example text",
+            "globals.messages.passwordChange": "example text",
+            "globals.messages.updated": "2024-01-01T00:00:00Z",
+            "globals.months.1": "globals.months.1",
+            "globals.months.10": "globals.months.10",
+            "globals.months.11": "globals.months.11",
+            "globals.months.12": "globals.months.12",
+            "globals.months.2": "globals.months.2",
+            "globals.months.3": "globals.months.3",
+            "globals.months.4": "globals.months.4",
+            "globals.months.5": "globals.months.5",
+            "globals.months.6": "globals.months.6",
+            "globals.months.7": "globals.months.7",
+            "globals.months.8": "globals.months.8",
+            "globals.months.9": "globals.months.9",
+            "globals.states.off": "globals.states.off",
+            "globals.terms.all": "globals.terms.all",
+            "globals.terms.analytics": "globals.terms.analytics",
+            "globals.terms.bounce": "globals.terms.bounce",
+            "globals.terms.bounces": "globals.terms.bounces",
+            "globals.terms.campaign": "globals.terms.campaign",
+            "globals.terms.campaigns": "globals.terms.campaigns",
+            "globals.terms.dashboard": "globals.terms.dashboard",
+            "globals.terms.day": "globals.terms.day",
+            "globals.terms.hour": "globals.terms.hour",
+            "globals.terms.list": "globals.terms.list",
+            "globals.terms.lists": "globals.terms.lists",
+            "globals.terms.media": "globals.terms.media",
+            "globals.terms.messenger": "globals.terms.messenger",
+            "globals.terms.messengers": "globals.terms.messengers",
+            "globals.terms.minute": "globals.terms.minute",
+            "globals.terms.month": "globals.terms.month",
+            "globals.terms.second": "globals.terms.second",
+            "globals.terms.settings": "globals.terms.settings",
+            "globals.terms.subscriber": "globals.terms.subscriber",
+            "globals.terms.subscribers": "globals.terms.subscribers",
+            "globals.terms.subscriptions": "globals.terms.subscriptions",
+            "globals.terms.tag": "globals.terms.tag",
+            "globals.terms.tags": "globals.terms.tags",
+            "globals.terms.template": "globals.terms.template",
+            "globals.terms.templates": "globals.terms.templates",
+            "globals.terms.tx": "globals.terms.tx",
+            "globals.terms.year": "globals.terms.year",
+            "import.alreadyRunning": "import.alreadyRunning",
+            "import.blocklist": "import.blocklist",
+            "import.csvDelim": "import.csvDelim",
+            "import.csvDelimHelp": "import.csvDelimHelp",
+            "import.csvExample": "import.csvExample",
+            "import.csvFile": "import.csvFile",
+            "import.csvFileHelp": "import.csvFileHelp",
+            "import.errorCopyingFile": "import.errorCopyingFile",
+            "import.errorProcessingZIP": "import.errorProcessingZIP",
+            "import.errorStarting": "import.errorStarting",
+            "import.importDone": "import.importDone",
+            "import.importStarted": "import.importStarted",
+            "import.instructions": "import.instructions",
+            "import.instructionsHelp": "import.instructionsHelp",
+            "import.invalidDelim": "import.invalidDelim",
+            "import.invalidFile": "import.invalidFile",
+            "import.invalidMode": "import.invalidMode",
+            "import.invalidParams": "import.invalidParams",
+            "import.invalidSubStatus": "active",
+            "import.listSubHelp": "import.listSubHelp",
+            "import.mode": "import.mode",
+            "import.overwrite": "import.overwrite",
+            "import.overwriteHelp": "import.overwriteHelp",
+            "import.recordsCount": "import.recordsCount",
+            "import.stopImport": "import.stopImport",
+            "import.subscribe": "import.subscribe",
+            "import.subscribeWarning": "import.subscribeWarning",
+            "import.title": "import.title",
+            "import.upload": "import.upload",
+            "lists.confirmDelete": "lists.confirmDelete",
+            "lists.confirmSub": "lists.confirmSub",
+            "lists.invalidName": "Example Name",
+            "lists.newList": "lists.newList",
+            "lists.optin": "lists.optin",
+            "lists.optinHelp": "lists.optinHelp",
+            "lists.optinTo": "lists.optinTo",
+            "lists.optins.double": "lists.optins.double",
+            "lists.optins.single": "lists.optins.single",
+            "lists.sendCampaign": "lists.sendCampaign",
+            "lists.sendOptinCampaign": "lists.sendOptinCampaign",
+            "lists.type": "lists.type",
+            "lists.typeHelp": "lists.typeHelp",
+            "lists.types.private": "lists.types.private",
+            "lists.types.public": "lists.types.public",
+            "logs.title": "logs.title",
+            "maintenance.help": "maintenance.help",
+            "maintenance.maintenance.unconfirmedOptins": "maintenance.maintenance.unconfirmedOptins",
+            "maintenance.olderThan": "maintenance.olderThan",
+            "maintenance.title": "maintenance.title",
+            "maintenance.unconfirmedSubs": "maintenance.unconfirmedSubs",
+            "media.errorReadingFile": "media.errorReadingFile",
+            "media.errorResizing": "media.errorResizing",
+            "media.errorSavingThumbnail": "media.errorSavingThumbnail",
+            "media.errorUploading": "media.errorUploading",
+            "media.invalidFile": "media.invalidFile",
+            "media.title": "media.title",
+            "media.unsupportedFileType": "media.unsupportedFileType",
+            "media.upload": "media.upload",
+            "media.uploadHelp": "media.uploadHelp",
+            "media.uploadImage": "media.uploadImage",
+            "menu.allCampaigns": "menu.allCampaigns",
+            "menu.allLists": "menu.allLists",
+            "menu.allSubscribers": "menu.allSubscribers",
+            "menu.dashboard": "menu.dashboard",
+            "menu.forms": "menu.forms",
+            "menu.import": "menu.import",
+            "menu.logs": "menu.logs",
+            "menu.maintenance": "menu.maintenance",
+            "menu.media": "menu.media",
+            "menu.newCampaign": "menu.newCampaign",
+            "menu.settings": "menu.settings",
+            "public.archiveEmpty": "public.archiveEmpty",
+            "public.archiveTitle": "public.archiveTitle",
+            "public.blocklisted": "public.blocklisted",
+            "public.campaignNotFound": "public.campaignNotFound",
+            "public.confirmOptinSubTitle": "public.confirmOptinSubTitle",
+            "public.confirmSub": "public.confirmSub",
+            "public.confirmSubInfo": "public.confirmSubInfo",
+            "public.confirmSubTitle": "public.confirmSubTitle",
+            "public.dataRemoved": "public.dataRemoved",
+            "public.dataRemovedTitle": "public.dataRemovedTitle",
+            "public.dataSent": "public.dataSent",
+            "public.dataSentTitle": "public.dataSentTitle",
+            "public.errorFetchingCampaign": "public.errorFetchingCampaign",
+            "public.errorFetchingEmail": "user@example.com",
+            "public.errorFetchingLists": "public.errorFetchingLists",
+            "public.errorProcessingRequest": "public.errorProcessingRequest",
+            "public.errorTitle": "public.errorTitle",
+            "public.invalidFeature": "public.invalidFeature",
+            "public.invalidLink": "https://example.com",
+            "public.managePrefs": "public.managePrefs",
+            "public.managePrefsUnsub": "public.managePrefsUnsub",
+            "public.noListsAvailable": "public.noListsAvailable",
+            "public.noListsSelected": "public.noListsSelected",
+            "public.noSubInfo": "public.noSubInfo",
+            "public.noSubTitle": "public.noSubTitle",
+            "public.notFoundTitle": "public.notFoundTitle",
+            "public.prefsSaved": "public.prefsSaved",
+            "public.privacyConfirmWipe": "public.privacyConfirmWipe",
+            "public.privacyExport": "public.privacyExport",
+            "public.privacyExportHelp": "public.privacyExportHelp",
+            "public.privacyTitle": "public.privacyTitle",
+            "public.privacyWipe": "public.privacyWipe",
+            "public.privacyWipeHelp": "public.privacyWipeHelp",
+            "public.sub": "public.sub",
+            "public.subConfirmed": "public.subConfirmed",
+            "public.subConfirmedTitle": "public.subConfirmedTitle",
+            "public.subName": "Example Name",
+            "public.subNotFound": "public.subNotFound",
+            "public.subOptinPending": "public.subOptinPending",
+            "public.subPrivateList": "public.subPrivateList",
+            "public.subTitle": "public.subTitle",
+            "public.unsub": "public.unsub",
+            "public.unsubFull": "public.unsubFull",
+            "public.unsubHelp": "public.unsubHelp",
+            "public.unsubTitle": "public.unsubTitle",
+            "public.unsubbedInfo": "public.unsubbedInfo",
+            "public.unsubbedTitle": "public.unsubbedTitle",
+            "public.unsubscribeTitle": "public.unsubscribeTitle",
+            "settings.appearance.adminHelp": "settings.appearance.adminHelp",
+            "settings.appearance.adminName": "Example Name",
+            "settings.appearance.customCSS": "settings.appearance.customCSS",
+            "settings.appearance.customJS": "settings.appearance.customJS",
+            "settings.appearance.name": "Example Name",
+            "settings.appearance.publicHelp": "settings.appearance.publicHelp",
+            "settings.appearance.publicName": "Example Name",
+            "settings.bounces.action": "settings.bounces.action",
+            "settings.bounces.blocklist": "settings.bounces.blocklist",
+            "settings.bounces.count": "settings.bounces.count",
+            "settings.bounces.countHelp": "settings.bounces.countHelp",
+            "settings.bounces.delete": "settings.bounces.delete",
+            "settings.bounces.enable": "settings.bounces.enable",
+            "settings.bounces.enableMailbox": "user@example.com",
+            "settings.bounces.enableSES": "settings.bounces.enableSES",
+            "settings.bounces.enableAzure": "settings.bounces.enableAzure",
+            "settings.bounces.enableSendgrid": "settings.bounces.enableSendgr-1",
+            "settings.bounces.enableForwardemail": "user@example.com",
+            "settings.bounces.enablePostmark": "settings.bounces.enablePostmark",
+            "settings.bounces.enableWebhooks": "settings.bounces.enableWebhooks",
+            "settings.bounces.enabled": "settings.bounces.enabled",
+            "settings.bounces.folder": "settings.bounces.folder",
+            "settings.bounces.folderHelp": "settings.bounces.folderHelp",
+            "settings.bounces.invalidScanInterval": "settings.bounces.invalidScanInterval",
+            "settings.bounces.azureSharedSecret": "settings.bounces.azureSharedSecret",
+            "settings.bounces.azureSharedSecretHelp": "settings.bounces.azureSharedSecretHelp",
+            "settings.bounces.azureSharedSecretHeader": "settings.bounces.azureSharedSecretHeader",
+            "settings.bounces.azureSharedSecretHeaderHelp": "settings.bounces.azureSharedSecretHeaderHelp",
+            "settings.bounces.name": "Example Name",
+            "settings.bounces.scanInterval": "settings.bounces.scanInterval",
+            "settings.bounces.scanIntervalHelp": "settings.bounces.scanIntervalHelp",
+            "settings.bounces.sendgridKey": "settings.bounces.sendgridKey",
+            "settings.bounces.forwardemailKey": "user@example.com",
+            "settings.bounces.postmarkUsername": "Example Name",
+            "settings.bounces.postmarkUsernameHelp": "Example Name",
+            "settings.bounces.postmarkPassword": "settings.bounces.postmarkPassword",
+            "settings.bounces.type": "settings.bounces.type",
+            "settings.bounces.username": "Example Name",
+            "settings.confirmRestart": "settings.confirmRestart",
+            "settings.duplicateMessengerName": "Example Name",
+            "settings.errorEncoding": "settings.errorEncoding",
+            "settings.errorNoSMTP": "settings.errorNoSMTP",
+            "settings.general.adminNotifEmails": "user@example.com",
+            "settings.general.adminNotifEmailsHelp": "user@example.com",
+            "settings.general.checkUpdates": "2024-01-01T00:00:00Z",
+            "settings.general.checkUpdatesHelp": "2024-01-01T00:00:00Z",
+            "settings.general.enablePublicArchive": "settings.general.enablePublicArchive",
+            "settings.general.enablePublicArchiveHelp": "settings.general.enablePublicArchiveHelp",
+            "settings.general.enablePublicSubPage": "settings.general.enablePublicSubPage",
+            "settings.general.enablePublicSubPageHelp": "settings.general.enablePublicSubPageHelp",
+            "settings.general.faviconURL": "https://example.com",
+            "settings.general.faviconURLHelp": "https://example.com",
+            "settings.general.fromEmail": "user@example.com",
+            "settings.general.fromEmailHelp": "user@example.com",
+            "settings.general.language": "settings.general.language",
+            "settings.general.logoURL": "https://example.com",
+            "settings.general.logoURLHelp": "https://example.com",
+            "settings.general.name": "Example Name",
+            "settings.general.rootURL": "https://example.com",
+            "settings.general.rootURLHelp": "https://example.com",
+            "settings.general.sendOptinConfirm": "settings.general.sendOptinConfirm",
+            "settings.general.sendOptinConfirmHelp": "settings.general.sendOptinConfirmHelp",
+            "settings.general.siteName": "Example Name",
+            "settings.invalidMessengerName": "Example Name",
+            "settings.mailserver.authProtocol": "settings.mailserver.authProtocol",
+            "settings.mailserver.name": "Example Name",
+            "settings.mailserver.nameHelp": "Example Name",
+            "settings.mailserver.host": "settings.mailserver.host",
+            "settings.mailserver.hostHelp": "settings.mailserver.hostHelp",
+            "settings.mailserver.idleTimeout": "2024-01-01T00:00:00Z",
+            "settings.mailserver.idleTimeoutHelp": "2024-01-01T00:00:00Z",
+            "settings.mailserver.maxConns": "settings.mailserver.maxConns",
+            "settings.mailserver.maxConnsHelp": "settings.mailserver.maxConnsHelp",
+            "settings.mailserver.password": "settings.mailserver.password",
+            "settings.mailserver.passwordHelp": "settings.mailserver.passwordHelp",
+            "settings.mailserver.port": "settings.mailserver.port",
+            "settings.mailserver.portHelp": "settings.mailserver.portHelp",
+            "settings.mailserver.skipTLS": "settings.mailserver.skipTLS",
+            "settings.mailserver.skipTLSHelp": "settings.mailserver.skipTLSHelp",
+            "settings.mailserver.tls": "settings.mailserver.tls",
+            "settings.mailserver.tlsHelp": "settings.mailserver.tlsHelp",
+            "settings.mailserver.username": "Example Name",
+            "settings.mailserver.waitTimeout": "2024-01-01T00:00:00Z",
+            "settings.mailserver.waitTimeoutHelp": "2024-01-01T00:00:00Z",
+            "settings.media.provider": "settings.media.provider",
+            "settings.media.s3.bucket": "settings.media.s3.bucket",
+            "settings.media.s3.bucketPath": "settings.media.s3.bucketPath",
+            "settings.media.s3.bucketPathHelp": "settings.media.s3.bucketPathHelp",
+            "settings.media.s3.bucketType": "settings.media.s3.bucketType",
+            "settings.media.s3.bucketTypePrivate": "settings.media.s3.bucketTypePrivate",
+            "settings.media.s3.bucketTypePublic": "settings.media.s3.bucketTypePublic",
+            "settings.media.s3.key": "settings.media.s3.key",
+            "settings.media.s3.publicURL": "https://example.com",
+            "settings.media.s3.publicURLHelp": "https://example.com",
+            "settings.media.s3.region": "settings.media.s3.region",
+            "settings.media.s3.secret": "settings.media.s3.secret",
+            "settings.media.s3.uploadExpiry": "settings.media.s3.uploadExpiry",
+            "settings.media.s3.uploadExpiryHelp": "settings.media.s3.uploadExpiryHelp",
+            "settings.media.s3.url": "https://example.com",
+            "settings.media.s3.urlHelp": "https://example.com",
+            "settings.media.title": "settings.media.title",
+            "settings.media.upload.path": "settings.media.upload.path",
+            "settings.media.upload.pathHelp": "settings.media.upload.pathHelp",
+            "settings.media.upload.uri": "https://example.com",
+            "settings.media.upload.uriHelp": "https://example.com",
+            "settings.messengers.maxConns": "settings.messengers.maxConns",
+            "settings.messengers.maxConnsHelp": "settings.messengers.maxConnsHelp",
+            "settings.messengers.messageSaved": "example text",
+            "settings.messengers.name": "Example Name",
+            "settings.messengers.nameHelp": "Example Name",
+            "settings.messengers.password": "settings.messengers.password",
+            "settings.messengers.retries": "settings.messengers.retries",
+            "settings.messengers.retriesHelp": "settings.messengers.retriesHelp",
+            "settings.messengers.skipTLSHelp": "settings.messengers.skipTLSHelp",
+            "settings.messengers.timeout": "2024-01-01T00:00:00Z",
+            "settings.messengers.timeoutHelp": "2024-01-01T00:00:00Z",
+            "settings.messengers.url": "https://example.com",
+            "settings.messengers.urlHelp": "https://example.com",
+            "settings.messengers.username": "Example Name",
+            "settings.needsRestart": "settings.needsRestart",
+            "settings.performance.batchSize": "settings.performance.batchSize",
+            "settings.performance.batchSizeHelp": "settings.performance.batchSizeHelp",
+            "settings.performance.concurrency": "settings.performance.concurrency",
+            "settings.performance.concurrencyHelp": "settings.performance.concurrencyHelp",
+            "settings.performance.maxErrThreshold": "settings.performance.maxErrThreshold",
+            "settings.performance.maxErrThresholdHelp": "settings.performance.maxErrThresholdHelp",
+            "settings.performance.messageRate": "example text",
+            "settings.performance.messageRateHelp": "example text",
+            "settings.performance.name": "Example Name",
+            "settings.performance.slidingWindow": "settings.performance.slidingWindow",
+            "settings.performance.slidingWindowDuration": "settings.performance.slidingWindowDuration",
+            "settings.performance.slidingWindowDurationHelp": "settings.performance.slidingWindowDurationHelp",
+            "settings.performance.slidingWindowHelp": "settings.performance.slidingWindowHelp",
+            "settings.performance.slidingWindowRate": "settings.performance.slidingWindowRate",
+            "settings.performance.slidingWindowRateHelp": "settings.performance.slidingWindowRateHelp",
+            "settings.privacy.allowBlocklist": "settings.privacy.allowBlocklist",
+            "settings.privacy.allowBlocklistHelp": "settings.privacy.allowBlocklistHelp",
+            "settings.privacy.allowExport": "settings.privacy.allowExport",
+            "settings.privacy.allowExportHelp": "settings.privacy.allowExportHelp",
+            "settings.privacy.allowPrefs": "settings.privacy.allowPrefs",
+            "settings.privacy.allowPrefsHelp": "settings.privacy.allowPrefsHelp",
+            "settings.privacy.allowWipe": "settings.privacy.allowWipe",
+            "settings.privacy.allowWipeHelp": "settings.privacy.allowWipeHelp",
+            "settings.privacy.domainBlocklist": "settings.privacy.domainBlocklist",
+            "settings.privacy.domainBlocklistHelp": "settings.privacy.domainBlocklistHelp",
+            "settings.privacy.individualSubTracking": "settings.privacy.individualSubTracking",
+            "settings.privacy.individualSubTrackingHelp": "settings.privacy.individualSubTrackingHelp",
+            "settings.privacy.listUnsubHeader": "settings.privacy.listUnsubHeader",
+            "settings.privacy.listUnsubHeaderHelp": "settings.privacy.listUnsubHeaderHelp",
+            "settings.privacy.name": "Example Name",
+            "settings.restart": "settings.restart",
+            "settings.smtp.customHeaders": "settings.smtp.customHeaders",
+            "settings.smtp.customHeadersHelp": "settings.smtp.customHeadersHelp",
+            "settings.smtp.enabled": "settings.smtp.enabled",
+            "settings.smtp.heloHost": "settings.smtp.heloHost",
+            "settings.smtp.heloHostHelp": "settings.smtp.heloHostHelp",
+            "settings.smtp.name": "Example Name",
+            "settings.smtp.retries": "settings.smtp.retries",
+            "settings.smtp.retriesHelp": "settings.smtp.retriesHelp",
+            "settings.smtp.sendTest": "settings.smtp.sendTest",
+            "settings.smtp.setCustomHeaders": "settings.smtp.setCustomHeaders",
+            "settings.smtp.testConnection": "settings.smtp.testConnection",
+            "settings.smtp.testEnterEmail": "user@example.com",
+            "settings.smtp.toEmail": "user@example.com",
+            "settings.title": "settings.title",
+            "settings.updateAvailable": "2024-01-01T00:00:00Z",
+            "subscribers.advancedQuery": "subscribers.advancedQuery",
+            "subscribers.advancedQueryHelp": "subscribers.advancedQueryHelp",
+            "subscribers.attribs": "subscribers.attribs",
+            "subscribers.attribsHelp": "subscribers.attribsHelp",
+            "subscribers.blocklistedHelp": "subscribers.blocklistedHelp",
+            "subscribers.confirmBlocklist": "subscribers.confirmBlocklist",
+            "subscribers.confirmDelete": "subscribers.confirmDelete",
+            "subscribers.confirmExport": "subscribers.confirmExport",
+            "subscribers.domainBlocklisted": "subscribers.domainBlocklisted",
+            "subscribers.downloadData": "subscribers.downloadData",
+            "subscribers.email": "user@example.com",
+            "subscribers.emailExists": "user@example.com",
+            "subscribers.errorBlocklisting": "subscribers.errorBlocklisting",
+            "subscribers.errorNoIDs": "subscribers.errorNoIDs",
+            "subscribers.errorNoListsGiven": "subscribers.errorNoListsGiven",
+            "subscribers.errorPreparingQuery": "subscribers.errorPreparingQuery",
+            "subscribers.errorSendingOptin": "subscribers.errorSendingOptin",
+            "subscribers.export": "subscribers.export",
+            "subscribers.invalidAction": "subscribers.invalidAction",
+            "subscribers.invalidEmail": "user@example.com",
+            "subscribers.invalidJSON": "subscribers.invalidJSON",
+            "subscribers.invalidName": "Example Name",
+            "subscribers.listChangeApplied": "subscribers.listChangeApplied",
+            "subscribers.lists": "subscribers.lists",
+            "subscribers.listsHelp": "subscribers.listsHelp",
+            "subscribers.listsPlaceholder": "subscribers.listsPlaceholder",
+            "subscribers.manageLists": "subscribers.manageLists",
+            "subscribers.markUnsubscribed": "subscribers.markUnsubscribed",
+            "subscribers.newSubscriber": "subscribers.newSubscriber",
+            "subscribers.numSelected": "subscribers.numSelected",
+            "subscribers.optinSubject": "subscribers.optinSubject",
+            "subscribers.preconfirm": "subscribers.preconfirm",
+            "subscribers.preconfirmHelp": "subscribers.preconfirmHelp",
+            "subscribers.query": "subscribers.query",
+            "subscribers.queryPlaceholder": "subscribers.queryPlaceholder",
+            "subscribers.reset": "subscribers.reset",
+            "subscribers.selectAll": "subscribers.selectAll",
+            "subscribers.sendOptinConfirm": "subscribers.sendOptinConfirm",
+            "subscribers.sentOptinConfirm": "subscribers.sentOptinConfirm",
+            "subscribers.status.blocklisted": "active",
+            "subscribers.status.confirmed": "active",
+            "subscribers.status.enabled": "active",
+            "subscribers.status.subscribed": "active",
+            "subscribers.status.unconfirmed": "active",
+            "subscribers.status.unsubscribed": "active",
+            "subscribers.subscribersDeleted": "subscribers.subscribersDeleted",
+            "templates.cantDeleteDefault": "templates.cantDeleteDefault",
+            "templates.default": "templates.default",
+            "templates.dummyName": "Example Name",
+            "templates.dummySubject": "templates.dummySubject",
+            "templates.errorCompiling": "templates.errorCompiling",
+            "templates.errorRendering": "templates.errorRendering",
+            "templates.fieldInvalidName": "Example Name",
+            "templates.makeDefault": "templates.makeDefault",
+            "templates.newTemplate": "templates.newTemplate",
+            "templates.placeholderHelp": "templates.placeholderHelp",
+            "templates.preview": "templates.preview",
+            "templates.rawHTML": "templates.rawHTML",
+            "templates.subject": "templates.subject",
+            "users.login": "users.login",
+            "users.logout": "users.logout"
+          }
+        }
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-3",
+    "operationId": "updateSettings",
+    "method": "PUT",
+    "path": "/settings",
+    "signature": "{\"errors\":[],\"method\":\"PUT\",\"nullable\":false,\"pagination\":null,\"parameters\":[],\"request\":[\"json\"],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-request", "json-response"],
+    "parameters": [],
+    "request": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "app.site_name": "Example Name",
+        "app.root_url": "https://example.com",
+        "app.logo_url": "https://example.com",
+        "app.favicon_url": "https://example.com",
+        "app.from_email": "user@example.com",
+        "app.notify_emails": ["user@example.com"],
+        "app.enable_public_subscription_page": false,
+        "app.enable_public_archive": false,
+        "app.send_optin_confirmation": false,
+        "app.check_updates": false,
+        "app.lang": "app.lang",
+        "app.batch_size": 1,
+        "app.concurrency": 1,
+        "app.max_send_errors": 1,
+        "app.message_rate": 30,
+        "app.message_sliding_window": false,
+        "app.message_sliding_window_duration": "example text",
+        "app.message_sliding_window_rate": 30,
+        "privacy.individual_tracking": false,
+        "privacy.unsubscribe_header": false,
+        "privacy.allow_blocklist": false,
+        "privacy.allow_preferences": false,
+        "privacy.allow_export": false,
+        "privacy.allow_wipe": false,
+        "privacy.exportable": ["privacy.exportable"],
+        "privacy.domain_blocklist": [{}],
+        "upload.provider": "upload.provider",
+        "upload.filesystem.upload_path": "upload.filesystem.upload_path",
+        "upload.filesystem.upload_uri": "https://example.com",
+        "upload.s3.url": "https://example.com",
+        "upload.s3.public_url": "https://example.com",
+        "upload.s3.aws_access_key_id": "upload.s3.aws_access_key_-1",
+        "upload.s3.aws_default_region": "upload.s3.aws_default_region",
+        "upload.s3.bucket": "upload.s3.bucket",
+        "upload.s3.bucket_domain": "upload.s3.bucket_domain",
+        "upload.s3.bucket_path": "upload.s3.bucket_path",
+        "upload.s3.bucket_type": "upload.s3.bucket_type",
+        "upload.s3.expiry": "upload.s3.expiry",
+        "smtp": [
+          {
+            "uuid": "uu-1",
+            "enabled": false,
+            "host": "host",
+            "hello_hostname": "Example Name",
+            "port": 1,
+            "auth_protocol": "auth_protocol",
+            "username": "Example Name",
+            "email_headers": [{}],
+            "max_conns": 1,
+            "max_msg_retries": 1,
+            "idle_timeout": "2024-01-01T00:00:00Z",
+            "wait_timeout": "2024-01-01T00:00:00Z",
+            "tls_type": "tls_type",
+            "tls_skip_verify": false
+          }
+        ],
+        "messengers": [{}],
+        "bounce.enabled": false,
+        "bounce.webhooks_enabled": false,
+        "bounce.count": 1,
+        "bounce.action": "bounce.action",
+        "bounce.ses_enabled": false,
+        "bounce.azure.enabled": false,
+        "bounce.azure.shared_secret": "bounce.azure.shared_secret",
+        "bounce.azure.shared_secret_header": "bounce.azure.shared_secret_header",
+        "bounce.sendgrid_enabled": false,
+        "bounce.sendgrid_key": "bounce.sendgrid_key",
+        "bounce.forwardemail_enabled": false,
+        "bounce.forwardemail_key": "user@example.com",
+        "bounce.postmark_enabled": false,
+        "bounce.postmark_username": "Example Name",
+        "bounce.postmark_password": "bounce.postmark_password",
+        "bounce.mailboxes": [
+          {
+            "uuid": "uu-1",
+            "enabled": false,
+            "type": "type",
+            "host": "host",
+            "port": 1,
+            "auth_protocol": "auth_protocol",
+            "return_path": "return_path",
+            "username": "Example Name",
+            "tls_enabled": false,
+            "tls_skip_verify": false,
+            "scan_interval": "scan_interval"
+          }
+        ],
+        "appearance.admin.custom_css": "appearance.admin.custom_css",
+        "appearance.admin.custom_js": "appearance.admin.custom_js",
+        "appearance.public.custom_css": "appearance.public.custom_css",
+        "appearance.public.custom_js": "appearance.public.custom_js"
+      }
+    },
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": false
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-4",
+    "operationId": "testSMTPSettings",
+    "method": "POST",
+    "path": "/settings/smtp/test",
+    "signature": "{\"errors\":[],\"method\":\"POST\",\"nullable\":false,\"pagination\":null,\"parameters\":[],\"request\":[\"json\"],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-request", "json-response"],
+    "parameters": [],
+    "request": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "uuid": "uu-1",
+        "enabled": false,
+        "host": "host",
+        "hello_hostname": "Example Name",
+        "port": 1,
+        "auth_protocol": "auth_protocol",
+        "username": "Example Name",
+        "email_headers": [{}],
+        "max_conns": 1,
+        "max_msg_retries": 1,
+        "idle_timeout": "2024-01-01T00:00:00Z",
+        "wait_timeout": "2024-01-01T00:00:00Z",
+        "tls_type": "tls_type",
+        "tls_skip_verify": false,
+        "strEmailHeaders": "user@example.com",
+        "password": "password",
+        "email": "user@example.com"
+      }
+    },
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": false
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-5",
+    "operationId": "reloadApp",
+    "method": "POST",
+    "path": "/admin/reload",
+    "signature": "{\"errors\":[],\"method\":\"POST\",\"nullable\":false,\"pagination\":null,\"parameters\":[],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response"],
+    "parameters": [],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": false
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-6",
+    "operationId": "getSubscribers",
+    "method": "GET",
+    "path": "/subscribers",
+    "signature": "{\"errors\":[],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":true,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"}],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response", "query-serialization"],
+    "parameters": [
+      {
+        "name": "page",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": 30
+      },
+      {
+        "name": "per_page",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": 30
+      },
+      {
+        "name": "query",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "query"
+      },
+      {
+        "name": "order_by",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "name"
+      },
+      {
+        "name": "order",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "ASC"
+      },
+      {
+        "name": "subscription_status",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "active"
+      },
+      {
+        "name": "list_id",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": [1]
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": {
+          "results": [
+            {
+              "id": 1,
+              "created_at": "2024-01-01T00:00:00Z",
+              "updated_at": "2024-01-01T00:00:00Z",
+              "uuid": "uu-1",
+              "email": "user@example.com",
+              "name": "Example Name",
+              "attribs": {},
+              "status": "active",
+              "lists": [
+                {
+                  "subscription_status": "active",
+                  "id": 1,
+                  "uuid": "uu-1",
+                  "name": "Example Name",
+                  "type": "type",
+                  "tags": ["tags"],
+                  "created_at": "2024-01-01T00:00:00Z",
+                  "updated_at": "2024-01-01T00:00:00Z"
+                }
+              ]
+            }
+          ],
+          "query": "query",
+          "total": 100,
+          "per_page": 30,
+          "page": 30
+        }
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-7",
+    "operationId": "deleteSubscriberByList",
+    "method": "DELETE",
+    "path": "/subscribers",
+    "signature": "{\"errors\":[],\"method\":\"DELETE\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":true,\"style\":\"form\"}],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response", "query-serialization"],
+    "parameters": [
+      {
+        "name": "id",
+        "location": "query",
+        "required": true,
+        "style": "form",
+        "explode": true,
+        "value": "id-1"
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": false
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-8",
+    "operationId": "updateSubscriberById",
+    "method": "PUT",
+    "path": "/subscribers/{id}",
+    "signature": "{\"errors\":[],\"method\":\"PUT\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[\"json\"],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-request", "json-response", "path-serialization"],
+    "parameters": [
+      {
+        "name": "id",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": 1
+      }
+    ],
+    "request": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "email": "user@example.com",
+        "name": "Example Name",
+        "status": "active",
+        "lists": [1],
+        "list_uuids": ["list_uuids"],
+        "preconfirm_subscriptions": false,
+        "attribs": {}
+      }
+    },
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": {
+          "id": 1,
+          "created_at": "2024-01-01T00:00:00Z",
+          "updated_at": "2024-01-01T00:00:00Z",
+          "uuid": "uu-1",
+          "email": "user@example.com",
+          "name": "Example Name",
+          "attribs": {},
+          "status": "active",
+          "lists": [
+            {
+              "subscription_status": "active",
+              "id": 1,
+              "uuid": "uu-1",
+              "name": "Example Name",
+              "type": "type",
+              "tags": ["tags"],
+              "created_at": "2024-01-01T00:00:00Z",
+              "updated_at": "2024-01-01T00:00:00Z"
+            }
+          ]
+        }
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-9",
+    "operationId": "deleteSubscriberById",
+    "method": "DELETE",
+    "path": "/subscribers/{id}",
+    "signature": "{\"errors\":[],\"method\":\"DELETE\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response", "path-serialization"],
+    "parameters": [
+      {
+        "name": "id",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": 1
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": false
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-10",
+    "operationId": "subscriberSendOptinById",
+    "method": "POST",
+    "path": "/subscribers/{id}/optin",
+    "signature": "{\"errors\":[],\"method\":\"POST\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response", "path-serialization"],
+    "parameters": [
+      {
+        "name": "id",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": 1
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": false
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-11",
+    "operationId": "deleteSubscriberByQuery",
+    "method": "POST",
+    "path": "/subscribers/query/delete",
+    "signature": "{\"errors\":[],\"method\":\"POST\",\"nullable\":false,\"pagination\":null,\"parameters\":[],\"request\":[\"text\",\"json\"],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-request", "json-response"],
+    "parameters": [],
+    "request": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "query": "query",
+        "ids": [1],
+        "action": "add",
+        "target_list_ids": 1,
+        "status": "confirmed"
+      }
+    },
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": false
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-12",
+    "operationId": "blocklistSubscribersQuery",
+    "method": "PUT",
+    "path": "/subscribers/query/blocklist",
+    "signature": "{\"errors\":[],\"method\":\"PUT\",\"nullable\":false,\"pagination\":null,\"parameters\":[],\"request\":[\"text\",\"json\"],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-request", "json-response"],
+    "parameters": [],
+    "request": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "query": "query",
+        "ids": [1],
+        "action": "add",
+        "target_list_ids": 1,
+        "status": "confirmed"
+      }
+    },
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": false
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-13",
+    "operationId": "getBounces",
+    "method": "GET",
+    "path": "/bounces",
+    "signature": "{\"errors\":[],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"}],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response", "query-serialization"],
+    "parameters": [
+      {
+        "name": "campaign_id",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": 1
+      },
+      {
+        "name": "page",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": 30
+      },
+      {
+        "name": "per_page",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": 30
+      },
+      {
+        "name": "source",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "source"
+      },
+      {
+        "name": "order_by",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "email"
+      },
+      {
+        "name": "order",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "asc"
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": {
+          "results": [
+            {
+              "results": [
+                {
+                  "id": 1,
+                  "type": "type",
+                  "source": "source",
+                  "meta": {},
+                  "created_at": "2024-01-01T00:00:00Z",
+                  "email": "user@example.com",
+                  "subscriber_uuid": "subscriber_uu-1",
+                  "subscriber_id": 1,
+                  "campaign": {
+                    "id": 1,
+                    "name": "Example Name"
+                  },
+                  "campaign_uuid": "campaign_uu-1",
+                  "total": 100
+                }
+              ]
+            }
+          ],
+          "query": "query",
+          "total": 100,
+          "per_page": 30,
+          "page": 30
+        }
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-14",
+    "operationId": "deleteBounces",
+    "method": "DELETE",
+    "path": "/bounces",
+    "signature": "{\"errors\":[],\"method\":\"DELETE\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"}],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response", "query-serialization"],
+    "parameters": [
+      {
+        "name": "all",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": false
+      },
+      {
+        "name": "id",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "id-1"
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": false
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-15",
+    "operationId": "importSubscribers",
+    "method": "POST",
+    "path": "/import/subscribers",
+    "signature": "{\"errors\":[],\"method\":\"POST\",\"nullable\":false,\"pagination\":null,\"parameters\":[],\"request\":[\"multipart\"],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response", "multipart-request"],
+    "parameters": [],
+    "request": {
+      "mediaType": "multipart/form-data",
+      "kind": "multipart",
+      "value": {
+        "params": "{\"mode\":\"subscribe\", \"subscription_status\":\"confirmed\", \"delim\":\",\", \"lists\":[1, 2], \"overwrite\": true}",
+        "file": "ZXhhbXBsZQ=="
+      }
+    },
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": {
+          "data": {
+            "name": "Example Name",
+            "total": 100,
+            "imported": 1,
+            "status": "active"
+          }
+        }
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-16",
+    "operationId": "stopImportSubscribers",
+    "method": "DELETE",
+    "path": "/import/subscribers",
+    "signature": "{\"errors\":[],\"method\":\"DELETE\",\"nullable\":false,\"pagination\":null,\"parameters\":[],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response"],
+    "parameters": [],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": {
+          "data": {
+            "name": "Example Name",
+            "total": 100,
+            "imported": 1,
+            "status": "active"
+          }
+        }
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-17",
+    "operationId": "getCampaigns",
+    "method": "GET",
+    "path": "/campaigns",
+    "signature": "{\"errors\":[],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":true,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":true,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"}],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response", "query-serialization"],
+    "parameters": [
+      {
+        "name": "status",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": ["scheduled"]
+      },
+      {
+        "name": "no_body",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": false
+      },
+      {
+        "name": "page",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": 30
+      },
+      {
+        "name": "per_page",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": 30
+      },
+      {
+        "name": "tags",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": ["tags"]
+      },
+      {
+        "name": "order",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "ASC"
+      },
+      {
+        "name": "order_by",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "name"
+      },
+      {
+        "name": "query",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": "query"
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": {
+          "results": [
+            {
+              "id": 1,
+              "created_at": "2024-01-01T00:00:00Z",
+              "updated_at": "2024-01-01T00:00:00Z",
+              "CampaignID": 1,
+              "views": 1,
+              "clicks": 1,
+              "lists": [
+                {
+                  "id": 1,
+                  "name": "Example Name"
+                }
+              ],
+              "started_at": "2024-01-01T00:00:00Z",
+              "to_send": 1,
+              "sent": 1,
+              "uuid": "uu-1",
+              "type": "regular",
+              "name": "Example Name",
+              "subject": "subject",
+              "from_email": "user@example.com",
+              "body": "body",
+              "send_at": "2024-01-01T00:00:00Z",
+              "status": "active",
+              "content_type": "richtext",
+              "tags": ["tags"],
+              "template_id": 1,
+              "messenger": "messenger"
+            }
+          ],
+          "query": "query",
+          "total": 100,
+          "per_page": 30,
+          "page": 30
+        }
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-18",
+    "operationId": "getCampaignById",
+    "method": "GET",
+    "path": "/campaigns/{id}",
+    "signature": "{\"errors\":[],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":false,\"style\":\"form\"}],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response", "path-serialization", "query-serialization"],
+    "parameters": [
+      {
+        "name": "id",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": 1
+      },
+      {
+        "name": "no_body",
+        "location": "query",
+        "required": false,
+        "style": "form",
+        "explode": true,
+        "value": false
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": {
+          "id": 1,
+          "created_at": "2024-01-01T00:00:00Z",
+          "updated_at": "2024-01-01T00:00:00Z",
+          "CampaignID": 1,
+          "views": 1,
+          "clicks": 1,
+          "lists": [
+            {
+              "id": 1,
+              "name": "Example Name"
+            }
+          ],
+          "started_at": "2024-01-01T00:00:00Z",
+          "to_send": 1,
+          "sent": 1,
+          "uuid": "uu-1",
+          "type": "regular",
+          "name": "Example Name",
+          "subject": "subject",
+          "from_email": "user@example.com",
+          "body": "body",
+          "send_at": "2024-01-01T00:00:00Z",
+          "status": "active",
+          "content_type": "richtext",
+          "tags": ["tags"],
+          "template_id": 1,
+          "messenger": "messenger"
+        }
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-19",
+    "operationId": "getRunningCampaignStats",
+    "method": "GET",
+    "path": "/campaigns/running/stats",
+    "signature": "{\"errors\":[],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":true,\"style\":\"form\"}],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response", "query-serialization"],
+    "parameters": [
+      {
+        "name": "campaign_id",
+        "location": "query",
+        "required": true,
+        "style": "form",
+        "explode": true,
+        "value": 1
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": [
+          {
+            "id": 1,
+            "status": "active",
+            "to_send": 1,
+            "sent": 1,
+            "started_at": "2024-01-01",
+            "updated_at": "2024-01-01",
+            "rate": 1,
+            "net_rate": 1
+          }
+        ]
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-20",
+    "operationId": "getCampaignAnalytics",
+    "method": "GET",
+    "path": "/campaigns/analytics/{type}",
+    "signature": "{\"errors\":[],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":true,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":true,\"style\":\"form\"},{\"array\":false,\"explode\":true,\"location\":\"query\",\"required\":true,\"style\":\"form\"}],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response", "path-serialization", "query-serialization"],
+    "parameters": [
+      {
+        "name": "type",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": "links"
+      },
+      {
+        "name": "from",
+        "location": "query",
+        "required": true,
+        "style": "form",
+        "explode": true,
+        "value": "2024-01-01"
+      },
+      {
+        "name": "to",
+        "location": "query",
+        "required": true,
+        "style": "form",
+        "explode": true,
+        "value": "to"
+      },
+      {
+        "name": "id",
+        "location": "query",
+        "required": true,
+        "style": "form",
+        "explode": true,
+        "value": "id-1"
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": [
+          {
+            "campaign_id": 1,
+            "count": 1,
+            "timestamp": "2024-01-01T00:00:00Z"
+          }
+        ]
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-21",
+    "operationId": "previewCampaignById",
+    "method": "GET",
+    "path": "/campaigns/{id}/preview",
+    "signature": "{\"errors\":[],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[],\"response\":[\"text\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["path-serialization", "text-response"],
+    "parameters": [
+      {
+        "name": "id",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": 1
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": "text/html",
+      "kind": "text",
+      "value": "<h3>Hi John!</h3>This is a   e-mail campaign. Your second name is Doe and you are from Bengaluru"
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-22",
+    "operationId": "updatePreviewCampaignById",
+    "method": "POST",
+    "path": "/campaigns/{id}/preview",
+    "signature": "{\"errors\":[],\"method\":\"POST\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[\"form\"],\"response\":[\"text\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["form-request", "path-serialization", "text-response"],
+    "parameters": [
+      {
+        "name": "id",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": 1
+      }
+    ],
+    "request": {
+      "mediaType": "application/x-www-form-urlencoded",
+      "kind": "form",
+      "value": {
+        "template_id": 1,
+        "content_type": "content_type",
+        "body": "body"
+      }
+    },
+    "response": {
+      "mediaType": "text/html",
+      "kind": "text",
+      "value": "<h3>Hi John!</h3>This is a   e-mail campaign. Your second name is Doe and you are from Bengaluru"
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-23",
+    "operationId": "createCampaignContentById",
+    "method": "POST",
+    "path": "/campaigns/{id}/content",
+    "signature": "{\"errors\":[],\"method\":\"POST\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[\"json\"],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-request", "json-response", "path-serialization"],
+    "parameters": [
+      {
+        "name": "id",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": 1
+      }
+    ],
+    "request": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "id": 1,
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z",
+        "CampaignID": 1,
+        "views": 1,
+        "clicks": 1,
+        "lists": [
+          {
+            "id": 1,
+            "name": "Example Name"
+          }
+        ],
+        "started_at": "2024-01-01T00:00:00Z",
+        "to_send": 1,
+        "sent": 1,
+        "uuid": "uu-1",
+        "type": "regular",
+        "name": "Example Name",
+        "subject": "subject",
+        "from_email": "user@example.com",
+        "body": "body",
+        "send_at": "2024-01-01T00:00:00Z",
+        "status": "active",
+        "content_type": "richtext",
+        "tags": ["tags"],
+        "template_id": 1,
+        "messenger": "messenger",
+        "from": "from",
+        "to": "to"
+      }
+    },
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": "data"
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-24",
+    "operationId": "testCampaignById",
+    "method": "POST",
+    "path": "/campaigns/{id}/test",
+    "signature": "{\"errors\":[],\"method\":\"POST\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[\"form\",\"json\"],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["form-request", "json-request", "json-response", "path-serialization"],
+    "parameters": [
+      {
+        "name": "id",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": 1
+      }
+    ],
+    "request": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "name": "Example Name",
+        "subject": "subject",
+        "lists": [1],
+        "from_email": "user@example.com",
+        "content_type": "content_type",
+        "messenger": "messenger",
+        "type": "type",
+        "tags": ["tags"],
+        "send_later": false,
+        "send_at": {
+          "headers": [{}],
+          "template_id": 1
+        }
+      }
+    },
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": false
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-25",
+    "operationId": "previewTemplate",
+    "method": "POST",
+    "path": "/templates/preview",
+    "signature": "{\"errors\":[],\"method\":\"POST\",\"nullable\":false,\"pagination\":null,\"parameters\":[],\"request\":[\"form\"],\"response\":[\"text\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["form-request", "text-response"],
+    "parameters": [],
+    "request": {
+      "mediaType": "application/x-www-form-urlencoded",
+      "kind": "form",
+      "value": {
+        "template_type": "template_type",
+        "body": "body"
+      }
+    },
+    "response": {
+      "mediaType": "text/html",
+      "kind": "text",
+      "value": "<p>Hi there</p>"
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-26",
+    "operationId": "previewTemplateById",
+    "method": "GET",
+    "path": "/templates/{id}/preview",
+    "signature": "{\"errors\":[],\"method\":\"GET\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[\"form\"],\"response\":[\"text\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["form-request", "path-serialization", "text-response"],
+    "parameters": [
+      {
+        "name": "id",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": 1
+      }
+    ],
+    "request": {
+      "mediaType": "application/x-www-form-urlencoded",
+      "kind": "form",
+      "value": {
+        "template_type": "template_type",
+        "body": "body"
+      }
+    },
+    "response": {
+      "mediaType": "text/html",
+      "kind": "text",
+      "value": "<p>Hi there</p>"
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-27",
+    "operationId": "setDefaultTemplateById",
+    "method": "PUT",
+    "path": "/templates/{id}/default",
+    "signature": "{\"errors\":[],\"method\":\"PUT\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["json-response", "path-serialization"],
+    "parameters": [
+      {
+        "name": "id",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": 1
+      }
+    ],
+    "request": null,
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "id": 1,
+        "created_at": "2024-01-01T00:00:00Z",
+        "updated_at": "2024-01-01T00:00:00Z",
+        "name": "Example Name",
+        "body": "body",
+        "body_source": "body_source",
+        "subject": "subject",
+        "type": "type",
+        "is_default": false
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-28",
+    "operationId": "deleteCampaignAnalyticsByType",
+    "method": "DELETE",
+    "path": "/maintenance/analytics/{type}",
+    "signature": "{\"errors\":[],\"method\":\"DELETE\",\"nullable\":false,\"pagination\":null,\"parameters\":[{\"array\":false,\"explode\":false,\"location\":\"path\",\"required\":true,\"style\":\"simple\"}],\"request\":[\"form\"],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["form-request", "json-response", "path-serialization"],
+    "parameters": [
+      {
+        "name": "type",
+        "location": "path",
+        "required": true,
+        "style": "simple",
+        "explode": false,
+        "value": "type"
+      }
+    ],
+    "request": {
+      "mediaType": "application/x-www-form-urlencoded",
+      "kind": "form",
+      "value": {
+        "before_date": "2024-01-01"
+      }
+    },
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": false
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "behavior-29",
+    "operationId": "deleteUnconfirmedSubscriptions",
+    "method": "DELETE",
+    "path": "/maintenance/subscriptions/unconfirmed",
+    "signature": "{\"errors\":[],\"method\":\"DELETE\",\"nullable\":false,\"pagination\":null,\"parameters\":[],\"request\":[\"form\"],\"response\":[\"json\"],\"security\":[],\"streaming\":false}",
+    "kinds": ["form-request", "json-response"],
+    "parameters": [],
+    "request": {
+      "mediaType": "application/x-www-form-urlencoded",
+      "kind": "form",
+      "value": {
+        "before_date": "2024-01-01"
+      }
+    },
+    "response": {
+      "mediaType": "application/json",
+      "kind": "json",
+      "value": {
+        "data": {
+          "count": 1
+        }
+      }
+    },
+    "security": [],
+    "securitySchemes": [],
+    "pagination": null
+  },
+  {
+    "id": "authored-previewCampaignById-200-text/html",
+    "operationId": "previewCampaignById",
+    "method": "GET",
+    "path": "/campaigns/{id}/preview",
+    "kinds": ["text-response"],
+    "authored": true,
+    "statusCode": "200",
+    "mediaType": "text/html",
+    "decoderKind": "text",
+    "value": "<h3>Hi John!</h3>This is a   e-mail campaign. Your second name is Doe and you are from Bengaluru",
+    "source": "schema-example"
+  },
+  {
+    "id": "authored-updatePreviewCampaignById-200-text/html",
+    "operationId": "updatePreviewCampaignById",
+    "method": "POST",
+    "path": "/campaigns/{id}/preview",
+    "kinds": ["text-response"],
+    "authored": true,
+    "statusCode": "200",
+    "mediaType": "text/html",
+    "decoderKind": "text",
+    "value": "<h3>Hi John!</h3>This is a   e-mail campaign. Your second name is Doe and you are from Bengaluru",
+    "source": "schema-example"
+  },
+  {
+    "id": "authored-previewCampaignTextById-200-text/html",
+    "operationId": "previewCampaignTextById",
+    "method": "POST",
+    "path": "/campaigns/{id}/text",
+    "kinds": ["text-response"],
+    "authored": true,
+    "statusCode": "200",
+    "mediaType": "text/html",
+    "decoderKind": "text",
+    "value": "<h3>Hi John!</h3><p>This is a test e-mail campaign. Your second name is Doe and you are from Bengaluru</p>",
+    "source": "schema-example"
+  },
+  {
+    "id": "authored-previewTemplate-200-text/html",
+    "operationId": "previewTemplate",
+    "method": "POST",
+    "path": "/templates/preview",
+    "kinds": ["text-response"],
+    "authored": true,
+    "statusCode": "200",
+    "mediaType": "text/html",
+    "decoderKind": "text",
+    "value": "<p>Hi there</p>",
+    "source": "schema-example"
+  },
+  {
+    "id": "authored-previewTemplateById-200-text/html",
+    "operationId": "previewTemplateById",
+    "method": "GET",
+    "path": "/templates/{id}/preview",
+    "kinds": ["text-response"],
+    "authored": true,
+    "statusCode": "200",
+    "mediaType": "text/html",
+    "decoderKind": "text",
+    "value": "<p>Hi there</p>",
+    "source": "schema-example"
+  }
+]
