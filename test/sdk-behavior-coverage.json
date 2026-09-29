@@ -1,0 +1,12 @@
+{
+  "renderedCases": 33,
+  "kinds": [
+    "form-request",
+    "json-request",
+    "json-response",
+    "multipart-request",
+    "path-serialization",
+    "query-serialization",
+    "text-response"
+  ]
+}
