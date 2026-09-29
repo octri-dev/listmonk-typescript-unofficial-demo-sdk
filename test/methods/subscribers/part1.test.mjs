@@ -189,7 +189,7 @@ const CALL = {
   deleteSubscriberByQueryText: {
     route: "deleteSubscriberByQuery",
     mediaType: "text/plain",
-    invoke: (bag) => deleteSubscriberByQueryText(config, { body: bag.__body }),
+    invoke: (bag) => deleteSubscriberByQueryText(config, bag.__body),
   },
   blocklistSubscribersQuery: {
     route: "blocklistSubscribersQuery",

@@ -35,7 +35,7 @@ const CALL = {
   blocklistSubscribersQueryText: {
     route: "blocklistSubscribersQuery",
     mediaType: "text/plain",
-    invoke: (bag) => blocklistSubscribersQueryText(config, { body: bag.__body }),
+    invoke: (bag) => blocklistSubscribersQueryText(config, bag.__body),
   },
   manageSubscriberListsByQuery: {
     route: "manageSubscriberListsByQuery",
@@ -52,7 +52,7 @@ const CALL = {
   manageSubscriberListsByQueryText: {
     route: "manageSubscriberListsByQuery",
     mediaType: "text/plain",
-    invoke: (bag) => manageSubscriberListsByQueryText(config, { body: bag.__body }),
+    invoke: (bag) => manageSubscriberListsByQueryText(config, bag.__body),
   },
 };
 

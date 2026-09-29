@@ -6883,46 +6883,14 @@
       "streams": false,
       "mode": "normal",
       "streamSelector": null,
-      "requestMediaType": "application/x-www-form-urlencoded",
+      "requestMediaType": null,
       "publicMethods": [
         {
           "mode": "normal",
           "name": "previewTemplateById"
         }
       ],
-      "requestModes": [
-        {
-          "mediaType": "application/x-www-form-urlencoded",
-          "encoderKind": "form",
-          "schemaRef": null,
-          "schemaType": {
-            "type": "object",
-            "format": null,
-            "ref": null,
-            "nullable": false,
-            "items": null,
-            "mapValue": null,
-            "variants": null
-          },
-          "bodyShape": "fields",
-          "fields": [
-            {
-              "name": "template_type",
-              "required": false,
-              "repeated": false,
-              "partKind": "scalar",
-              "contentType": null
-            },
-            {
-              "name": "body",
-              "required": false,
-              "repeated": false,
-              "partKind": "scalar",
-              "contentType": null
-            }
-          ]
-        }
-      ],
+      "requestModes": [],
       "responseModes": [
         {
           "statusCode": "200",
@@ -6945,16 +6913,6 @@
       "errorResponseModes": [],
       "params": [
         {
-          "name": "body",
-          "in": "body",
-          "required": false,
-          "nullable": false,
-          "type": "string",
-          "wireType": "string",
-          "declaredValue": null,
-          "mediaTypes": ["application/x-www-form-urlencoded"]
-        },
-        {
           "name": "id",
           "in": "path",
           "required": true,
@@ -6964,16 +6922,6 @@
           "declaredValue": null,
           "style": "simple",
           "explode": false
-        },
-        {
-          "name": "template_type",
-          "in": "body",
-          "required": false,
-          "nullable": false,
-          "type": "string",
-          "wireType": "string",
-          "declaredValue": null,
-          "mediaTypes": ["application/x-www-form-urlencoded"]
         }
       ],
       "bindings": [
@@ -6987,26 +6935,6 @@
           "declaredValue": null,
           "style": "simple",
           "explode": false
-        },
-        {
-          "name": "template_type",
-          "in": "body",
-          "required": false,
-          "nullable": false,
-          "type": "string",
-          "wireType": "string",
-          "declaredValue": null,
-          "mediaTypes": ["application/x-www-form-urlencoded"]
-        },
-        {
-          "name": "body",
-          "in": "body",
-          "required": false,
-          "nullable": false,
-          "type": "string",
-          "wireType": "string",
-          "declaredValue": null,
-          "mediaTypes": ["application/x-www-form-urlencoded"]
         }
       ]
     },

@@ -88,13 +88,8 @@ const CALL = {
   },
   previewTemplateById: {
     route: "previewTemplateById",
-    mediaType: "application/x-www-form-urlencoded",
-    invoke: (bag) =>
-      previewTemplateById(config, {
-        templateType: bag.__body?.["template_type"],
-        body: bag.__body?.["body"],
-        id: bag["id"],
-      }),
+    mediaType: null,
+    invoke: (bag) => previewTemplateById(config, { id: bag["id"] }),
   },
   setDefaultTemplateById: {
     route: "setDefaultTemplateById",

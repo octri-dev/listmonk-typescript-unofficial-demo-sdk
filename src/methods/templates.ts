@@ -227,8 +227,6 @@ export async function previewTemplate(
 
 export interface PreviewTemplateByIdParams {
   id: number;
-  templateType?: string;
-  body?: string;
 }
 
 /**
@@ -237,12 +235,10 @@ export interface PreviewTemplateByIdParams {
  * renders the HTML preview of a template.
  *
  * @param id - The id value of the template you want to get.
- * @param templateType - type of template
- * @param body - template body
  */
 export async function previewTemplateById(
   config: ClientConfig,
-  { id, templateType, body }: PreviewTemplateByIdParams,
+  { id }: PreviewTemplateByIdParams,
   requestOptions?: RequestOptions,
 ): Promise<string> {
   const _resp = await sdkRequest<string>({
@@ -251,11 +247,6 @@ export async function previewTemplateById(
     operationId: "previewTemplateById",
     responseDecoder: "text",
     ...requestOptions,
-    body: {
-      template_type: templateType,
-      body,
-    },
-    contentType: "application/x-www-form-urlencoded",
     config,
   });
   return _resp.data;

@@ -2016,45 +2016,6 @@
     },
     {
       "id": "behavior-26",
-      "operationId": "previewTemplateById",
-      "kinds": ["form-request", "path-serialization", "text-response"],
-      "request": {
-        "method": "GET",
-        "pathTemplate": "/templates/{id}/preview",
-        "pathParameters": {
-          "id": 1
-        },
-        "query": [],
-        "headers": {},
-        "body": {
-          "template_type": "template_type",
-          "body": "body"
-        },
-        "bodyKind": "form",
-        "contentType": "application/x-www-form-urlencoded",
-        "security": []
-      },
-      "expect": {
-        "method": "GET",
-        "path": "/templates/1/preview",
-        "query": "",
-        "url": "https://behavior.test/templates/1/preview",
-        "headers": {
-          "content-type": "application/x-www-form-urlencoded"
-        },
-        "bodyText": "template_type=template_type&body=body",
-        "multipartFields": null
-      },
-      "response": {
-        "kind": "text",
-        "status": 200,
-        "mediaType": "text/html",
-        "body": "<p>Hi there</p>",
-        "value": "<p>Hi there</p>"
-      }
-    },
-    {
-      "id": "behavior-27",
       "operationId": "setDefaultTemplateById",
       "kinds": ["json-response", "path-serialization"],
       "request": {
@@ -2097,7 +2058,7 @@
       }
     },
     {
-      "id": "behavior-28",
+      "id": "behavior-27",
       "operationId": "deleteCampaignAnalyticsByType",
       "kinds": ["form-request", "json-response", "path-serialization"],
       "request": {
@@ -2137,7 +2098,7 @@
       }
     },
     {
-      "id": "behavior-29",
+      "id": "behavior-28",
       "operationId": "deleteUnconfirmedSubscriptions",
       "kinds": ["form-request", "json-response"],
       "request": {

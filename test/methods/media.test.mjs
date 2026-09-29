@@ -32,7 +32,7 @@ const CALL = {
   uploadMedia: {
     route: "uploadMedia",
     mediaType: "multipart/form-data",
-    invoke: (bag) => uploadMedia(config, { body: bag.__body }),
+    invoke: (bag) => uploadMedia(config, bag.__body),
   },
   getMediaById: {
     route: "getMediaById",
